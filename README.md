@@ -44,13 +44,15 @@ Para profesionalizar la plataforma, se integran funcionalidades de alta compleji
 ├── src/
 │   ├── assets/          # Imágenes, fuentes y recursos estáticos
 │   ├── components/      # Componentes React reutilizables
+│   ├── const/           # Constantes y valores globales
+│   ├── context/         # Gestión de estado global
 │   ├── hooks/           # Custom hooks reutilizables
-│   ├── services/        # Lógica de negocio y llamadas a APIs
+│   ├── locales/         # Traducciones y localización
 │   ├── pages/           # Vistas/páginas de la aplicación
-│   ├── utils/           # Funciones utilitarias
+│   ├── services/        # Lógica de negocio y llamadas a APIs
 │   ├── App.jsx          # Componente principal
-│   ├── main.jsx         # Punto de entrada
-│   └── index.css        # Estilos globales
+│   ├── index.css        # Estilos globales
+│   └── main.jsx         # Punto de entrada
 ├── .gitignore           # Archivos excluidos de Git
 ├── .eslint.config.js    # Reglas de calidad de código
 ├── index.html           # Punto de entrada de la app
