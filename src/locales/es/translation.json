@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "LEGO STAR WARS: PRUEBA DE PALETA",
+    "colors": {
+      "primary": "Primario",
+      "secondary": "Secundario",
+      "accent": "Acento",
+      "contrast": "Contraste"
+    },
+    "card": {
+      "title": "Luke Skywalker",
+      "description": "Prueba de cómo se ve el texto sobre el fondo secundario con acentos en azul y amarillo."
+    },
+    "links": {
+      "characters": "Personajes",
+      "charactersId": "Personaje:id",
+      "favorites": "Favoritos",
+      "contact": "Contacto",
+      "about": "Acerca de",
+      "notFound": "No Encontrado"
+    }
+  }
+}

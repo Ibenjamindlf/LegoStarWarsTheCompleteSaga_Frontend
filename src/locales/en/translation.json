@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "LEGO STAR WARS: PALETTE TEST",
+    "colors": {
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "accent": "Accent",
+      "contrast": "Contrast"
+    },
+    "card": {
+      "title": "Luke Skywalker",
+      "description": "Test of how text looks on the secondary background with blue and yellow accents."
+    },
+    "links": {
+      "characters": "Characters",
+      "charactersId": "Characters:id",
+      "favorites": "Favorites",
+      "contact": "Contact",
+      "about": "About",
+      "notFound": "NotFound"
+    }
+  }
+}
