@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // Importación de las páginas
 import Home from './pages/Home/Home';
-import Characters from './pages/Characters/Characters';
+import { Characters } from './pages/Characters/Characters';
 import CharacterDetail from './pages/CharacterDetail/CharacterDetail';
 import Favorites from './pages/Favorites/Favorites';
 import Contact from './pages/Contact/Contact';
