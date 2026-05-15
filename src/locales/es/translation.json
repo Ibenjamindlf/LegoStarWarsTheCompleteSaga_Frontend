@@ -1,23 +1,32 @@
 {
   "home": {
-    "title": "LEGO STAR WARS: PRUEBA DE PALETA",
+    "title": "Lego Characters",
+    "nav": {
+      "home": "Inicio",
+      "characters": "Personajes",
+      "favorites": "Favoritos"
+    },
+    "footer": {
+      "forceQuote": "\"Desarrollado con ayuda de la Fuerza\"",
+      "developedBy": "Desarrollado por"
+    },
     "colors": {
-      "primary": "Primario",
-      "secondary": "Secundario",
-      "accent": "Acento",
-      "contrast": "Contraste"
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "accent": "Accent",
+      "contrast": "Contrast"
     },
     "card": {
       "title": "Luke Skywalker",
-      "description": "Prueba de cómo se ve el texto sobre el fondo secundario con acentos en azul y amarillo."
+      "description": "Test of how text looks on the secondary background with blue and yellow accents."
     },
     "links": {
-      "characters": "Personajes",
-      "charactersId": "Personaje:id",
-      "favorites": "Favoritos",
-      "contact": "Contacto",
-      "about": "Acerca de",
-      "notFound": "No Encontrado"
+      "characters": "Characters",
+      "charactersId": "Characters:id",
+      "favorites": "Favorites",
+      "contact": "Contact",
+      "about": "About",
+      "notFound": "NotFound"
     }
   }
 }
