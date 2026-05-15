@@ -1,6 +1,5 @@
 // src/App.jsx
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router';
-import { useTranslation } from 'react-i18next';
 
 // Importación de las páginas
 import Home from './pages/Home/Home';
@@ -11,52 +10,32 @@ import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import NotFound from './pages/NotFound/NotFound';
 
-// Layout Base (gestiona el i18n y la navegación estructural)
+// Importación de tus nuevos componentes de Layout
+import { Navbar } from './components/Navbar/Navbar';
+import { Footer } from './components/Footer/Footer';
+
+// Layout Base
 const RootLayout = () => {
-  // Extraemos la función de traducción y el objeto i18n dentro del Layout
-  const { t, i18n } = useTranslation();
-
-  // Función para cambiar el idioma dinámicamente
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
   return (
-    <div className="min-h-screen bg-primary text-white">
-      {/* 
-        Simulamos un Navbar: 
-        Aquí es donde deben ir los botones globales, ya que este Navbar 
-        estará presente en todas las rutas hijas.
-      */}
-      <nav className="p-4 bg-gray-800 flex justify-between items-center">
-        {/* Usamos una clave de traducción, con un valor por defecto opcional */}
-        <h1 className="text-xl font-bold">{t('title', 'Lego Star Wars')}</h1>
-        
-        <div>
-          <button 
-            className="mr-4 px-2 py-1 bg-blue-600 rounded" 
-            onClick={() => changeLanguage('es')}
-          >
-            Español
-          </button>
-          <button 
-            className="px-2 py-1 bg-blue-600 rounded" 
-            onClick={() => changeLanguage('en')}
-          >
-            English
-          </button>
-        </div>
-      </nav>
+    // Agregamos flex y flex-col para que el footer siempre quede abajo si hay poco contenido
+    <div className="min-h-screen flex flex-col bg-primary text-white">
+      
+      {/* Nuestro nuevo Navbar Galáctico */}
+      <Navbar />
 
-      {/* Contenido dinámico de las rutas */}
-      <main className="p-4 flex-grow">
-        <Outlet /> {/* se renderizaran Home, Characters, etc. */}
+      {/* Contenido dinámico de las rutas (con padding superior para el navbar fijo) */}
+      <main className="flex-grow pt-24 pb-8 px-4 w-full max-w-7xl mx-auto">
+        <Outlet /> 
       </main>
       
-      {/* <Footer /> */}
+      {/* Nuestro nuevo Footer Galáctico */}
+      <Footer />
+      
     </div>
   );
 };
+
+// ... el resto de la configuración de tus rutas se mantiene igual
 
 // Configuración del Router
 const router = createBrowserRouter([

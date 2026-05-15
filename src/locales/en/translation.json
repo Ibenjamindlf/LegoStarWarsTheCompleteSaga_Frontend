@@ -1,6 +1,15 @@
 {
   "home": {
-    "title": "LEGO STAR WARS: PALETTE TEST",
+    "title": "Lego Characters",
+    "nav": {
+      "home": "Home",
+      "characters": "Characters",
+      "favorites": "Favorites"
+    },
+    "footer": {
+      "forceQuote": "\"Developed with the help of the Force\"",
+      "developedBy": "Developed by"
+    },
     "colors": {
       "primary": "Primary",
       "secondary": "Secondary",
